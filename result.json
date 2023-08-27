@@ -343,12 +343,25 @@
       }
     }
   },
-  "remove_colmn": {
-    "column": ["ID", "Customer_ID", "SSN"],
-    "reason": "p_value > 0.04"
+  "max": {
+    "3": ["Month", "Num_of_Loan"],
+    "4": [
+      "Age",
+      "Num_Bank_Accounts",
+      "Num_Credit_Card",
+      "Interest_Rate",
+      "Delay_from_due_date",
+      "Num_of_Delayed_Payment",
+      "Num_Credit_Inquiries"
+    ],
+    "9": ["Annual_Income"],
+    "18": ["Monthly_Inhand_Salary", "Total_EMI_per_month", "Monthly_Balance"],
+    "5": ["Changed_Credit_Limit", "Credit_History_Age"],
+    "7": ["Outstanding_Debt"],
+    "17": ["Credit_Utilization_Ratio", "Amount_invested_monthly"]
   },
+  "remove_colmn": { "column": ["SSN"], "reason": "p_value > 0.05" },
   "string_column": [
-    "Name",
     "Occupation",
     "Type_of_Loan",
     "Credit_Mix",

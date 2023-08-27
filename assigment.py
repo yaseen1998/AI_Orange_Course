@@ -2,7 +2,7 @@ import pandas as pd
 from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
 import json
-
+import seaborn as sns
 def Convert_y_to_numeric(y):
     unique_value = y.unique()
     mapping = {}
@@ -32,7 +32,7 @@ def clean_data(x, y):
 
 def Hypothesis_testing(column_data, y,result,column):
     p_value = pearsonr(column_data, y)[1]
-    if p_value > 0.04:
+    if p_value > 0.05:
         if "remove_colmn" not in result:
             result["remove_colmn"] = {
                 "column": [],
@@ -76,7 +76,32 @@ df = pd.read_csv("csv/credit_score.csv")
 # x all columns except credit score
 x = df.iloc[:, 0:-1]
 # y credit score
-y  = df.iloc[:, -1]
-y = Convert_y_to_numeric(y)
-clean_data(x, y)
+# y  = df.iloc[:, -1]
+# y = Convert_y_to_numeric(y)
+# clean_data(x, y)
 
+# drop string column
+print(len(x.columns))
+for s in x.columns:
+    if x[s].dtype == "object":
+        x = x.drop(s, axis=1)
+        
+number_of_columns = len(x.columns)
+divide_number = 3
+total_row = number_of_columns // divide_number
+print(total_row)
+
+#every colum has whole fig but in same column has three fig show all in one figfig, axes = plt.subplots(number_of_columns, 1, figsize=(8, 6 * number_of_columns))
+fig, axes = plt.subplots(total_row+1, divide_number, figsize=(15, 20 ))
+ax_row = 0
+ax_col = 0
+for i in x.columns:
+    sns.boxplot(x[i], ax=axes[ax_row, ax_col])
+    # title
+    axes[ax_row, ax_col].set_title(i)
+    ax_col += 1
+    if ax_col == divide_number:
+        ax_row += 1
+        ax_col = 0
+
+plt.show()
