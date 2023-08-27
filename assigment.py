@@ -1,4 +1,7 @@
-
+import pandas as pd
+from scipy.stats import pearsonr
+import matplotlib.pyplot as plt
+import json
 def Convert_y_to_numeric(y):
     unique_value = y.unique()
     mapping = {}
@@ -45,6 +48,8 @@ def Hypothesis_testing(column_data, y,result,column):
 def Column_Description(column_data,result,column):
     description = column_data.describe()
     description_dict = description.to_dict()
+    print(column_data.isnull().sum())
+    description_dict['null'] = str(column_data.isnull().sum())
     result['column'][column]=Outliar(column_data,description_dict)
 
 def Outliar(column_data,description_dict):
