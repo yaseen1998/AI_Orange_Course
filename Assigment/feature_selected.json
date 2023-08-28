@@ -32,6 +32,12 @@
       "Monthly_Balance",
       "Num_Credit_Inquiries",
       "Credit_Utilization_Ratio"
+    ],
+    "common": [
+      "Interest_Rate",
+      "Credit_Mix",
+      "Num_Credit_Inquiries",
+      "Delay_from_due_date"
     ]
   },
   "scale_Robust": {
@@ -67,6 +73,13 @@
       "Monthly_Balance",
       "Num_Credit_Inquiries",
       "Credit_Utilization_Ratio"
+    ],
+    "common": [
+      "Delay_from_due_date",
+      "Interest_Rate",
+      "Outstanding_Debt",
+      "Credit_Mix",
+      "Num_Credit_Inquiries"
     ]
   },
   "scaled_min_sklearn": {
@@ -101,6 +114,13 @@
       "Changed_Credit_Limit",
       "Credit_Utilization_Ratio",
       "Monthly_Balance",
+      "Num_Credit_Card"
+    ],
+    "common": [
+      "Delay_from_due_date",
+      "Interest_Rate",
+      "Outstanding_Debt",
+      "Credit_Mix",
       "Num_Credit_Card"
     ]
   },
@@ -137,6 +157,13 @@
       "Monthly_Balance",
       "Credit_Utilization_Ratio",
       "Num_Credit_Inquiries"
+    ],
+    "common": [
+      "Delay_from_due_date",
+      "Interest_Rate",
+      "Outstanding_Debt",
+      "Credit_Mix",
+      "Num_Credit_Inquiries"
     ]
   },
   "scaled_log": {
@@ -172,6 +199,50 @@
       "Monthly_Balance",
       "Credit_Utilization_Ratio",
       "Num_Credit_Card"
+    ],
+    "common": [
+      "Outstanding_Debt",
+      "Credit_Mix",
+      "Delay_from_due_date",
+      "Num_Credit_Card"
     ]
-  }
+  },
+  "common_1": [
+    "Delay_from_due_date",
+    "Num_of_Delayed_Payment",
+    "Interest_Rate",
+    "Outstanding_Debt",
+    "Num_Bank_Accounts",
+    "Credit_Mix",
+    "Num_Credit_Inquiries",
+    "Credit_History_Age",
+    "Num_Credit_Card"
+  ],
+  "common_2": [
+    "Changed_Credit_Limit",
+    "Delay_from_due_date",
+    "Credit_Mix",
+    "Num_Credit_Inquiries",
+    "Num_Credit_Card"
+  ],
+  "common_3": [
+    "Changed_Credit_Limit",
+    "Delay_from_due_date",
+    "Interest_Rate",
+    "Outstanding_Debt",
+    "Monthly_Balance",
+    "Credit_Mix",
+    "Credit_History_Age",
+    "Credit_Utilization_Ratio"
+  ],
+  "common":[
+    "Delay_from_due_date",
+    "Interest_Rate",
+    "Outstanding_Debt",
+    "Credit_Mix",
+    "Num_Credit_Inquiries",
+    "Credit_History_Age",
+    "Num_Credit_Card"
+  ]
+
 }
