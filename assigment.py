@@ -3,11 +3,10 @@ from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
 import json
 import seaborn as sns
+
 def Convert_y_to_numeric(y):
     unique_value = y.unique()
-    mapping = {}
-    for i in range(len(unique_value)):
-        mapping[unique_value[i]] = i+1
+    mapping = {"Bad": 0, "Standard": 1, "Good": 2}
     y = y.map(mapping)
     return y
     
@@ -42,10 +41,6 @@ def Hypothesis_testing(column_data, y,result,column):
     else:
         Column_Description(column_data,result,column)
     
-    
-    
-
-
 def Column_Description(column_data,result,column):
     description = column_data.describe()
     description_dict = description.to_dict()
@@ -83,23 +78,4 @@ x = df.iloc[:, 0:-1]
 # drop string column
 
         
-number_of_columns = len(x.columns)
-divide_number = 3
-total_row = number_of_columns // divide_number
 
-#every colum has whole fig but in same column has three fig show all in one figfig, axes = plt.subplots(number_of_columns, 1, figsize=(8, 6 * number_of_columns))
-fig, axes = plt.subplots(total_row+1, divide_number, figsize=(15, 20 ))
-ax_row = 0
-ax_col = 0
-for i in x.columns:
-    if x[i].dtype == "object":
-        continue
-    sns.boxplot(x[i], ax=axes[ax_row, ax_col])
-    # title
-    axes[ax_row, ax_col].set_title(i)
-    ax_col += 1
-    if ax_col == divide_number:
-        ax_row += 1
-        ax_col = 0
-
-plt.show()
