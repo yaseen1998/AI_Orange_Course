@@ -44,10 +44,10 @@
     ],
     "common": [
       "Interest_Rate",
+      "Num_Credit_Inquiries",
       "Delay_from_due_date",
       "Credit_Mix",
-      "Interest_Loan_Interaction",
-      "Num_Credit_Card"
+      "Interest_Loan_Interaction"
     ]
   },
   "scaled_min_sklearn": {
@@ -148,8 +148,55 @@
       "Interest_Rate",
       "Delay_from_due_date",
       "Credit_Mix",
-      "Interest_Loan_Interaction",
-      "Num_Credit_Card"
+      "Interest_Loan_Interaction"
     ]
-  }
+  },
+  "common_1": [
+    "Interest_Rate",
+    "Num_Credit_Inquiries",
+    "Num_of_Delayed_Payment",
+    "Delay_from_due_date",
+    "Credit_History_Age",
+    "Credit_Mix",
+    "Interest_Loan_Interaction",
+    "Num_Bank_Accounts",
+    "Num_Credit_Card",
+    "Payment_of_Min_Amount",
+    "Outstanding_Debt"
+  ],
+  "common_2": [
+    "Interest_Rate",
+    "Num_Credit_Inquiries",
+    "Num_of_Loan",
+    "Net_Monthly_Savings",
+    "Delay_from_due_date",
+    "Credit_Mix",
+    "Num_Credit_Card",
+    "Annual_Income",
+    "Changed_Credit_Limit",
+    "Monthly_Inhand_Salary"
+  ],
+  "common_3": [
+    "Interest_Rate",
+    "Month",
+    "Monthly_Balance",
+    "Delay_from_due_date",
+    "Credit_History_Age",
+    "Credit_Mix",
+    "Interest_Loan_Interaction",
+    "Credit_Utilization_Ratio",
+    "Credit_Utilization",
+    "Outstanding_Debt",
+    "Changed_Credit_Limit"
+  ],
+  "common": [
+    "Interest_Rate",
+    "Num_Credit_Inquiries",
+    "Delay_from_due_date",
+    "Credit_History_Age",
+    "Credit_Mix",
+    "Interest_Loan_Interaction",
+    "Num_Credit_Card",
+    "Outstanding_Debt"
+  ]
 }
