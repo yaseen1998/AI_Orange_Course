@@ -197,10 +197,13 @@
     "Credit_Mix",
     "Interest_Loan_Interaction",
     "Num_Credit_Card",
+    "Loan_Type" ,
     "Outstanding_Debt"
   ],
   "rubust_score":{"common": {"SVC": 0.68455, "KNN": 0.79475}, "common_1": {"SVC": 0.6918, "KNN": 0.79285}, "common_2": {"SVC": 0.6933, "KNN": 0.77475}, "common_3": {"SVC": 0.6909, "KNN": 0.64505}},
   "standard":{"common": {"SVC": 0.6861, "KNN": 0.79485}, "common_1": {"SVC": 0.69595, "KNN": 0.79205}, "common_2": {"SVC": 0.69405, "KNN": 0.77385}, "common_3": {"SVC": 0.69045, "KNN": 0.65175}},
   "features":{"common": {"SVC": 0.6148, "KNN": 0.8155}, "common_1": {"SVC": 0.6145, "KNN": 0.814}, "common_2": {"SVC": 0.531, "KNN": 0.79245}, "common_3": {"SVC": 0.63055, "KNN": 0.6653}},
-  "min":{"common": {"SVC": 0.68455, "KNN": 0.79475}, "common_1": {"SVC": 0.6918, "KNN": 0.79285}, "common_2": {"SVC": 0.6933, "KNN": 0.77475}, "common_3": {"SVC": 0.6909, "KNN": 0.64505}}
+  "min":{"common": {"SVC": 0.68455, "KNN": 0.79475}, "common_1": {"SVC": 0.6918, "KNN": 0.79285}, "common_2": {"SVC": 0.6933, "KNN": 0.77475}, "common_3": {"SVC": 0.6909, "KNN": 0.64505}},
+  "random_min":{"common": {"Random Forest": 0.8164}, "common_1": {"Random Forest": 0.81535}, "common_2": {"Random Forest": 0.79315}, "common_3": {"Random Forest": 0.7927}},
+  "random_feature":{"common": {"Random Forest": 0.8184}, "common_1": {"Random Forest": 0.81725}, "common_2": {"Random Forest": 0.79295}, "common_3": {"Random Forest": 0.79455}}
 }
