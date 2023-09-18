@@ -141,3 +141,35 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2023-09-18 10:08:03,951:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 11:23:24,830:WARNING:/var/folders/34/_2zdrybn1lj85gxn2k84gfnh0000gn/T/ipykernel_55025/610414768.py:10: FutureWarning:
+
+
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+
+
+2023-09-18 11:24:51,973:WARNING:/var/folders/34/_2zdrybn1lj85gxn2k84gfnh0000gn/T/ipykernel_55025/1633260357.py:10: FutureWarning:
+
+
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+
+
+2023-09-18 11:25:22,593:WARNING:/var/folders/34/_2zdrybn1lj85gxn2k84gfnh0000gn/T/ipykernel_55025/1876902462.py:10: FutureWarning:
+
+
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+
+
+2023-09-18 11:25:34,982:WARNING:/var/folders/34/_2zdrybn1lj85gxn2k84gfnh0000gn/T/ipykernel_55025/1670192922.py:10: FutureWarning:
+
+
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+
+
