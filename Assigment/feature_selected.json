@@ -148,8 +148,7 @@
       "Interest_Rate",
       "Delay_from_due_date",
       "Credit_Mix",
-      "Interest_Loan_Interaction",
-      "Num_Credit_Card"
+      "Interest_Loan_Interaction"
     ]
   }
 }
